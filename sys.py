@@ -15,7 +15,7 @@ if sys.argv[1] == "raiz_bisecao":
 if sys.argv[1] == "raiz_secante":
     raiz_secante(n, c)
 
-# no segundo argumento escolha: raiz_newton ou raiz_bisecao 
+# no segundo argumento escolha: raiz_newton, raiz_bisecao ou raiz_secante
 # no terceiro e quarto escolha o índice e valor a ser radiciado
 # no ultimo escolha um chute inicial 
 
