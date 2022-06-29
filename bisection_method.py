@@ -12,7 +12,7 @@ def bisection (f, a, b, n = 0, tol = 1.0e-14):
     
     if f(a)*f(b) > 0:
         print("Erro de intervalo")
-    
+        return None
     while abs(b-a) > tol:
         x = (a+b)/2
         n += 1 
@@ -26,8 +26,13 @@ def bisection (f, a, b, n = 0, tol = 1.0e-14):
 
     return x
 
-def f(x):
-    return x**5 - 3*x**4 + 2*x**3 - 6*x**2 + 5*x - 3
+def f(x, n, c):
+    return (x**n) - c
 
-bisection(f, -6, 6,)
-print("\n\n----%s segundos----" % (time.time() - start_time))
+def raiz_bisecao(n,c):
+    def g(x):
+        return f(x,n,c)
+    #end
+    return bisection(g,0,c+1)
+#end
+
