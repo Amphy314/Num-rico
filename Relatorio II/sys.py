@@ -17,6 +17,6 @@ if sys.argv[1] == "raiz_secante":
 
 # no segundo argumento escolha: raiz_newton, raiz_bisecao ou raiz_secante
 # no terceiro e quarto escolha o índice e valor a ser radiciado
-# no ultimo escolha um chute inicial 
+
 
 print("\n\n----%s segundos----" % (time.time() - start_time))
