@@ -3,9 +3,9 @@ from sl import eliminacao_gaussiana
 import time
 start_time = time.time()
 
-
+# e^(-1/x^2) de 1 a 2:
 x = [1.0 ,1.5 ,2.0]
-y = [0.0, 0.405465108108164,  0.693147180559945]
+y = [0.36787944117144233, 0.641180388429954582251520479131204482604147,  0.7788007830714]
 
 def int_pol(x, y):
     q = len(x)
